@@ -16,10 +16,10 @@ namespace Kalkulačka
         {
             InitializeComponent();
         }
-
+        // Proměné
         string operation;
         string number;
-
+        // Operandy
         private void button1_Click(object sender, EventArgs e)
         {
             number = number + "1";
@@ -70,7 +70,7 @@ namespace Kalkulačka
             number = number + "0";
             setlabel(number.ToString());
         }
-
+        // Operátory
         private void button14_Click(object sender, EventArgs e)
         {
             operation = operation + number + "+";
@@ -98,7 +98,7 @@ namespace Kalkulačka
             number = "";
             setlabel(operation.ToString());
         }
-
+        // Výsledek
         private void button10_Click(object sender, EventArgs e)
         {
             try
@@ -118,6 +118,7 @@ namespace Kalkulačka
             }
             
         }
+        // Nastavení textu
         void setlabel(string label)
         {
             label2.Text = label;
