@@ -109,6 +109,7 @@ namespace Kalkulačka
                 setlabel(result.ToString());
                 number = "";
                 operation = "(" + operation + ")";
+                Console.WriteLine(operation);
             }
             catch(Exception ex)
             {
